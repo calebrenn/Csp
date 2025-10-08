@@ -89,26 +89,28 @@ trtl.addshape("leaf5", ((8, -12), (0, 13), (-8, -12), (12, 4), (-12, 4)))
 my_leaves = []
 
 # use diff leaves and colors
-leaf_shapes = ["leaf1","leaf2", "leaf3", "leaf4", "leaf5"]
-leaf_colors = ["burlywood", "goldenrod", "lawngreen", "fuchsia", "forestgreen"]
-
-# ask user how many leaves they want
-leaf = int(trtl.textinput("leaves", "How many leaves do you want to have on the screen?"))
-
+leaf_shapes = ["leaf1", "leaf2", "leaf3", "leaf4", "leaf5", "leaf1","leaf2", "leaf3", "leaf4", "leaf5", "leaf1", "leaf2", "leaf3", "leaf4", "leaf5", "leaf1", "leaf2", "leaf3", "leaf4", "leaf5", "leaf1", "leaf2", "leaf3", "leaf4", "leaf5"]
+leaf_colors = [color, color, color, color, color, color, color, color, color, color, color, color, color, color, color, color, color, color, color, color, color, color, color, color, color, color,]
 # leaves
 leaves = trtl.Turtle()
 import random
 leaves.color = "leaf_color"
 leaves.speed(0)
 
-# put the leaves all over the screen
-for l in range(leaf):
-    for current_leaf in leaf_shapes and leaf_colors:
-        leaves.penup()
-        leaves.goto(random.randint(-400, 400), random.randint(-400, 0))
-        leaves.stamp()
-        leaves.pendown()
+# put the leaves all the screen
+for l in range(1):
+    for le in leaf_shapes:
+        t = trtl.Turtle(shape=le)
+        c= leaf_colors.pop()
+        t.color(c)
+        t.penup()
+        my_leaves.append(t)
 
+    for t in my_leaves:
+        t.goto(random.randint(-400, 400), random.randint(-400, 0))
+        t.pendown()
+        t.stamp()
+        t.penup()
 
 wn = trtl.Screen()
-wn.mainloop()
+wn.mainloop() 
