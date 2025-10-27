@@ -1,4 +1,4 @@
-# leaderboard.py
+# 1.2.5leaderboard.py
 # The leaderboard module to be used in Activity 1.2.2
 
 # set the levels of scoring
