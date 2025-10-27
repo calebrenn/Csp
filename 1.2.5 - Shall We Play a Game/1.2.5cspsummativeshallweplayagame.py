@@ -3,8 +3,8 @@ import turtle as trtl
 import random as rand
 import leaderboard as lb
 wn = trtl.Screen()
-
-# Start screen with a button to press to start the game
+leaderboard_file_name = "1.2.5_leaderboard.txt"
+# Start screen with a button to press to start the game like enter
 
 # Ask for name and put it in the leaderboard.txt file
 
