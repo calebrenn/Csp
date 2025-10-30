@@ -1,4 +1,4 @@
-# 1.2.5leaderboard.py
+# leaderboard.py
 # The leaderboard module to be used in Activity 1.2.2
 
 # set the levels of scoring
@@ -146,5 +146,5 @@ def draw_leaderboard(high_scorer, leader_names, leader_scores, turtle_object, pl
   else:
     turtle_object.write("you didnt earn a medal. maybe next time.", font=font_setup)
   
-get_scores("1.2.5_leaderboard.txt")
-get_names("1.2.5_leaderboard.txt")
+get_scores("125leaderboard.txt")
+get_names("125leaderboard.txt")
