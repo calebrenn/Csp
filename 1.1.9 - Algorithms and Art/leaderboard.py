@@ -146,5 +146,5 @@ def draw_leaderboard(high_scorer, leader_names, leader_scores, turtle_object, pl
   else:
     turtle_object.write("you didnt earn a medal. maybe next time.", font=font_setup)
   
-get_scores("125leaderboard.txt")
-get_names("125leaderboard.txt")
+get_scores("125_leaderboard.txt")
+get_names("125_leaderboard.txt")
